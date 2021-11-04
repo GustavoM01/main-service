@@ -35,11 +35,10 @@ public class MainServiceImp implements MainService{
                 // The passed id gets ignored by the opportunity-service and assigns new id
                 opportunityProxy.create(
                         new OpportunityDTO(
-                                0L,
                                 convertLeadDTO.getProduct(),
                                 convertLeadDTO.getQuantity(),
                                 newContact.getDecisionMakerId(),
-                                0L, // Can be assigned later, deleted (account keeps track of opp) or create account before opp
+                                0L,
                                 salesRepId));
 
 

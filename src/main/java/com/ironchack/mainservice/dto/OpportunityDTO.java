@@ -13,6 +13,8 @@ public class OpportunityDTO {
 
     private Long id;
 
+    private String status;
+
     private String product;
 
     private Integer quantity;
@@ -22,4 +24,12 @@ public class OpportunityDTO {
     private Long account;
 
     private Long salesRep;
+
+    public OpportunityDTO(String product, Integer quantity, Long decisionMaker, Long account, Long salesRep) {
+        this.product = product;
+        this.quantity = quantity;
+        this.decisionMaker = decisionMaker;
+        this.account = account;
+        this.salesRep = salesRep;
+    }
 }
