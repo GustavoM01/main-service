@@ -11,12 +11,9 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ConvertLeadDTO {
+public class AccountDTO {
 
-    // Data that can be supplied by request
-    private String product;
-    private Integer quantity;
-    // Account data
+    private Long id;
     private String industry;
     private Integer employeeCount;
     private String city;
@@ -24,12 +21,12 @@ public class ConvertLeadDTO {
     private List<Long> contactList;
     private List<Long> opportunityList;
 
-    public ConvertLeadDTO(String product, Integer quantity, String industry, Integer employeeCount, String city, String country) {
-        this.product = product;
-        this.quantity = quantity;
+    public AccountDTO(String industry, Integer employeeCount, String city, String country, List<Long> contactList, List<Long> opportunityList) {
         this.industry = industry;
         this.employeeCount = employeeCount;
         this.city = city;
         this.country = country;
+        this.contactList = contactList;
+        this.opportunityList = opportunityList;
     }
 }

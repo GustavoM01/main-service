@@ -6,5 +6,5 @@ import com.ironchack.mainservice.dto.OpportunityDTO;
 
 public interface MainService {
 
-    OpportunityDTO convertLead(Long id, ConvertLeadDTO convertLeadDTO);
+    String convertLead(Long id, ConvertLeadDTO convertLeadDTO);
 }
