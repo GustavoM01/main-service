@@ -18,7 +18,7 @@ public class MainController {
     }
 
     @PostMapping("/convert/{id}")
-    public OpportunityDTO convertLead(@PathVariable Long id, @RequestBody ConvertLeadDTO convertLeadDTO) {
+    public String convertLead(@PathVariable Long id, @RequestBody ConvertLeadDTO convertLeadDTO) {
         return mainService.convertLead(id, convertLeadDTO);
     }
 
